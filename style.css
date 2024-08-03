@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.navbar-bg-color {
+    background-color: transparent;
+}
+
+section {
+    display: none;
+    /* Hide all sections by default */
+}
+
+section:target {
+    display: block;
+    /* Show the targeted section */
+}
+
+@media (min-width:992px) {
+    .navbar-bg-color {
+        background-color: #67bc2f;
+    }
+}
+
+@media (min-width:992px) {
+    .container-fluid {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.ssn-logo {
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 8px;
+}
+
+@media (min-width:992px) {
+    .ssn-logo {
+        width: 200px;
+    }
+}
+
+.navbar-icon-button {
+    background-color: transparent;
+    border-width: 0px;
+    padding: 0px;
+    margin: 4px;
+}
+
+
+.navbar-icon {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.navbar-icon input {
+    display: none;
+}
+
+.navbar-icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #67bc2f;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.navbar-icon span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.navbar-icon span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.navbar-icon span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.navbar-icon input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.navbar-icon input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.navbar-icon input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+.navbar-fonts {
+    font-family: "Space Grotesk";
+}
+
+.navbar-fonts a {
+    color: #67bc2f;
+}
+
+@media (min-width:992px) {
+    .navbar-fonts a {
+        color: white;
+    }
+}
+
+.navbar-fonts a:hover {
+    color: black;
+}
+
+.banner-background-sm {
+    background-image: url(https://scontent.fmaa12-3.fna.fbcdn.net/v/t1.6435-9/48358137_219122425641903_5520915420871131136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2a1932&_nc_ohc=FyMctj7BT4UQ7kNvgEM7ixo&_nc_ht=scontent.fmaa12-3.fna&oh=00_AYCXba7KSp7D635bQajfoS_Z0R0-IRq1qUXm-QmxpKtm7g&oe=66B5BE3B);
+    width: 100vw;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-background-md {
+    background-image: url(https://scontent.fmaa12-3.fna.fbcdn.net/v/t1.6435-9/48358137_219122425641903_5520915420871131136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2a1932&_nc_ohc=FyMctj7BT4UQ7kNvgEM7ixo&_nc_ht=scontent.fmaa12-3.fna&oh=00_AYCXba7KSp7D635bQajfoS_Z0R0-IRq1qUXm-QmxpKtm7g&oe=66B5BE3B);
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-heading-card {
+    width: 50%;
+    height: 100%;
+    background-color: #67bc2f88;
+    color: white;
+    font-family: "Space Grotesk";
+    text-align: center;
+    text-align: left;
+}
+
+@media (min-width:992px) {
+    .banner-heading-card {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width:1200px) {
+    .banner-heading-card {
+        margin-left: 186px;
+    }
+}
+
+
+.banner-md-heading {
+    font-size: clamp(24px, 4vw, 44px);
+    font-weight: bold;
+}
+
+.banner-md-para {
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: bold;
+}
+
+.banner-sm-heading {
+    font-size: clamp(20px, 4vw, 26px);
+    font-weight: bold;
+}
+
+.banner-sm-para {
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: bold;
+}
+
+.home-content-main-heading {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Space Grotesk";
+    text-justify: inter-word;
+}
+
+
+@media (min-width: 992px) {
+    .home-content-main-heading {
+        font-size: 36px;
+        /* Font size for screens 768px and above */
+    }
+}
+
+.home-content-other-content-induvidual-card {
+    border-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-color: #80808050;
+    padding-top: 6px;
+    padding-bottom: 16px;
+}
+
+@media (min-width: 992px) {
+    .home-content-other-content-induvidual-card {
+        padding-top: 8px;
+    }
+
+}
+
+.bottom-card {
+    background-color: #67bc2f;
+}
+
+.card-navbar {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Span the entire width */
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:992px) {
+    .navbar-list li {
+        display: inline-block;
+        /* Already set for side-by-side display */
+    }
+}
+
+/* Remove margin for spacing (optional, but recommended for better alignment) */
+.navbar-list li {
+    margin-right: 0;
+    font-size: 12px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media(min-width:992px) {
+    .navbar-list a {
+        margin-bottom: 0px;
+    }
+}
+
+
+.navbar-list a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+@media(min-width:992px) {
+    .navbar-list li:after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 12px;
+        /* Adjust height as needed */
+        background-color: #ffffff;
+        margin-right: 10px;
+        /* Adjust margin as needed */
+        margin-left: 10px;
+    }
+
+    .navbar-list li:last-child:after {
+        content: none;
+    }
+}
+
+.home-content-sub-heading {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Space Grotesk";
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media (min-width: 992px) {
+    .home-content-sub-heading {
+        font-size: 26px;
+        /* Font size for screens 768px and above */
+    }
+}
+
+.home-content-sub-discription {
+    font-size: 18px;
+    font-family: "Roboto";
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media (min-width: 992px) {
+    .home-content-sub-discription {
+        font-size: 18px;
+    }
+}
+
+.home-content-other-content-span {
+    font-size: 14px;
+    font-family: "Space Grotesk";
+    color: #67bc2f;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #67bc2f;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+@media (min-width: 992px) {
+    .home-content-other-content-span {
+        font-size: 18px;
+    }
+}
+
+.home-content-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 16px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 12px;
+    background-color: #67bc2f;
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px #67bc2f;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home-content-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #67bc2f;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home-content-button .arr-1 {
+    right: 16px;
+}
+
+.home-content-button .arr-2 {
+    left: -25%;
+}
+
+.home-content-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #67bc2f;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home-content-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home-content-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    background-color: transparent;
+    border-color: #67bc2f;
+    border-radius: 12px;
+}
+
+.home-content-button:hover .arr-1 {
+    right: -25%;
+}
+
+.home-content-button:hover .arr-2 {
+    left: 16px;
+}
+
+.home-content-button:hover .text {
+    transform: translateX(12px);
+}
+
+.home-content-button:hover svg {
+    fill: #212121;
+}
+
+.home-content-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #67bc2f;
+}
+
+.home-content-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+@media (min-width: 992px) {
+    .home-content-button {
+        font-size: 18px;
+    }
+}
+
+.home-content-mission-and-vision-card {
+    margin-left: 0px;
+}
+
+@media (min-width: 992px) {
+    .home-content-mission-and-vision-card {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-content-mission-and-vision-card {
+        margin-left: 186px;
+    }
+}
+
+.home-content-other-content-card {
+    margin-right: 0px;
+}
+
+@media (min-width: 992px) {
+    .home-content-other-content-card {
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-content-other-content-card {
+        margin-right: 186px;
+    }
+}
+
+.bottom-card-content {
+    margin: 0px;
+}
+
+@media (min-width: 992px) {
+    .bottom-card-content {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bottom-card-content {
+        margin-left: 186px;
+        margin-right: 186px;
+    }
+}
+
+.bottom-card-copyrights {
+    font-size: 12px;
+    font-family: "Roboto";
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+}
+
+.footer-icons {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.bottom-card-icon-container {
+    margin-top: 24px;
+}
+
+@media(min-width:992px) {
+    .bottom-card-icon-container {
+        margin-top: 48px;
+    }
+
+    .footer-icons {
+        font-size: 12px;
+    }
+}
+
+.our-institution-logo {
+    width: 50%;
+}
+
+@media(min-width:992px) {
+    .our-institution-logo {
+        width: 100%;
+    }
+}
+
+.office-bearers-image {
+    width: 75%;
+    border-radius: 1000px;
+    border-width: 6px;
+    border-color: #f0f0f0;
+    border-style: solid;
+    margin-top: 48px;
+}
+
+.office-bearers-container {
+    background: linear-gradient(to bottom, #67bc2f 35%, #f0f0f0 0%);
+}
+
+@media(min-width:768px) {
+    .office-bearers-container {
+        background: linear-gradient(to bottom, #67bc2f 32%, #f0f0f0 0%);
+    }
+}
+
+.office-bearers-container-name {
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.office-bearers-container-designation {
+    font-family: "Space Grotesk";
+    font-size: 16px;
+}
+
+.contact-heading {
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.contact-content {
+    font-family: "Space Grotesk";
+    font-size: 18px;
+}
+
+.content-address {
+    font-family: "Space Grotesk";
+    font-size: 18px;
+}
+
+.event-container {
+    background-color: #f0f0f0;
+}
+
+.event-container-heading {
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.event-container-discription {
+    font-family: "Space Grotesk";
+    font-size: 16px;
+}
