@@ -310,6 +310,7 @@
     font-family: "Space Grotesk";
     text-align: justify;
     text-justify: inter-word;
+    color: #67bc2f;
 }
 
 @media (min-width: 992px) {
@@ -432,13 +433,7 @@
 
 @media (min-width: 992px) {
     .home-content-mission-and-vision-card {
-        margin-left: 100px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .home-content-mission-and-vision-card {
-        margin-left: 186px;
+        margin-left: 14%;
     }
 }
 
@@ -448,13 +443,7 @@
 
 @media (min-width: 992px) {
     .home-content-other-content-card {
-        margin-right: 100px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .home-content-other-content-card {
-        margin-right: 186px;
+        margin-right: 14%;
     }
 }
 .download-link {
@@ -507,15 +496,10 @@
 
 @media (min-width: 992px) {
     .navbar-left-margin {
-        margin-left: 50px;
+        margin-left: 10%;
     }
 }
 
-@media (min-width: 1200px) {
-    .navbar-left-margin {
-        margin-left: 136px;
-    }
-}
 
 .navbar-right-margin {
     margin-right: 0px;
@@ -523,15 +507,10 @@
 
 @media (min-width: 992px) {
     .navbar-right-margin {
-        margin-right: 50px;
+        margin-right: 10%;
     }
 }
 
-@media (min-width: 1200px) {
-    .navbar-right-margin {
-        margin-right: 130px;
-    }
-}
 
 .bottom-card-content {
     margin: 0px;
@@ -539,17 +518,11 @@
 
 @media (min-width: 992px) {
     .bottom-card-content {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 12%;
+        margin-right: 12%;
     }
 }
 
-@media (min-width: 1200px) {
-    .bottom-card-content {
-        margin-left: 186px;
-        margin-right: 186px;
-    }
-}
 
 .bottom-card-copyrights {
     font-size: 12px;
